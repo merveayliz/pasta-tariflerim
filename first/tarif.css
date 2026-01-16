@@ -1,0 +1,149 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(mor.jpg) no-repeat fixed center/cover;
+}
+
+.carousel {
+  height: 850px;
+  perspective: 250px;
+  margin-top: 100px;
+  overflow: visible !important;
+}
+
+
+.carousel .carousel-item {
+  background: white; 
+  width: 450px !important; /* Yan yana sığması için biraz genişlik şart */
+  height: 500px !important; /* kartların uzunluğu*/
+  margin: 25px 0;
+  animation: animate 2s infinite alternate;
+  border-radius: 20px;
+  border: 3px solid #a204f7;
+  padding: 30px; /* İçerik biraz daha rahatlasın */
+  display: flex !important;
+  flex-wrap: wrap; 
+  align-items: center; 
+  justify-content: center;
+  gap: 15px;
+  align-content:flex-start ;
+}
+
+
+.carousel .carousel-item h2 {
+  width: 100% !important; /* Bak burası %100 olmalı, 100px değil! */
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  text-align: center;
+}
+
+.tarif-listesi {
+  padding: 0 !important;
+  width: 45% !important; /* Genişliği kıstık */
+  margin: 0 !important;
+  list-style: none !important;
+}
+
+.tarif-listesi li {
+  font-size: 16px;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 5px 0 5px 25px; /* Yıldız için yer */
+  color: #444;
+  text-align: left;
+}
+
+.tarif-listesi li::before {
+  content: "⭐";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tarif-listesi li:hover {
+  transform: translateX(5px);
+  color: #a204f7;
+  font-weight: bold;
+}
+
+
+.carousel .carousel-item img {
+  width: 175px !important;
+  height: 145px !important;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #0f0c0c !important;
+  margin: 0 !important;
+  flex-shrink: 0; /* Resmin yamulmasını engeller */
+}
+
+
+@keyframes animate {
+  from { box-shadow: 0 0 30px #0820d7, 0 0 60px #fd0505, 0 0 90px #8e05f1; }
+  to { box-shadow: 0 0 50px 10px #0d18de, 0 0 80px 15px #ec3604, 0 0 110px 20px #bd07ea; }
+}
+
+.bilgi-konteyner {
+    display: flex;
+    justify-content: center;
+    margin-top: 92px; /* 3d kartlar ile bilgi kutusu arasındaki boşluğun mesafesi*/
+    padding-bottom: 50px; /* Sayfanın en altında boşluk kalsın */
+}
+
+.bilgi-kutusu { 
+    
+    width: 70%;
+    background: rgba(255, 255, 255, 0.9); /* Hafif şeffaf beyaz */
+    border: 5px double #a204f7; /* Çift çizgili mor çerçeve */
+    border-radius: 20px;
+    padding: 60px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(162, 4, 247, 0.4);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bilgi-kutusu h3 {
+    color: #a204f7;
+    margin-top: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.bilgi-kutusu p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.degerlendirme {
+  margin-top: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+.yildizlar {
+  display: flex;
+  flex-direction: row-reverse; /* Yıldızların soldan sağa doğru dolması için */
+  justify-content: center;
+}
+
+.yildiz {
+  font-size: 30px;
+  color: #ccc; /* Boş yıldız rengi */
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.yildiz:hover,
+.yildiz:hover ~ .yildiz {
+  color: #f1c40f; /* Üzerine gelince sarı olsun */
+}
+
+.puan-yazi {
+  font-size: 14px;
+  color: #201c1c;
+  margin: 5px 0 0 0;
+}

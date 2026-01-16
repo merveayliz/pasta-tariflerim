@@ -1,0 +1,134 @@
+<!DOCTYPE html> 
+<html lang="tr">
+      <head>  <title>GOLDEN CRUMBS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+             <link rel="icon" href="pastacı.jpg" 
+                  type="pastacı.jpg">
+
+              <link rel="stylesheet" href="tarif.css">
+
+              <link rel=" stylesheet "  
+              href=" https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        </head> 
+
+     <body>
+        
+
+      <div class="carousel">
+          <div class="carousel-item" style="padding: 20px; text-align: center;"> 
+            <h2 style="color: rgb(37, 4, 223); font-size :24px;">🍓 MAGNOLYA DESSERT🍓</h2>
+            
+          <ul class="tarif-listesi"> <b>🧾Materials🍫🍒</b>
+             <li >1dark chocolate</li>
+             <li >granulated sugar</li>
+             <li >2 starch</li>
+             <li >1 egg yolk</li>
+             <li >1 vanilla</li> 
+             <li >1 packet liquid cream</li>
+          </ul>
+           <img id="resim1"  src="mg.jpg">
+
+           <div class="degerlendirme">
+               <div class="yildizlar">
+                 <span class="yildiz" data-value="5">★</span>
+                 <span class="yildiz" data-value="4">★</span>
+                 <span class="yildiz" data-value="3">★</span>
+                 <span class="yildiz" data-value="2">★</span>
+                 <span class="yildiz" data-value="1">★</span>
+               </div>
+              <p class="puan-yazi">Rate this recipe!</p>
+           </div>
+      </div>
+  
+      <div class="carousel-item" style="padding: 20px; text-align: center;"> 
+              <h2 style="color: rgb(237, 6, 6); font-size :24px;">🍓🍩DONUT DESSERT🍓🍩</h2>
+
+           <ul class="tarif-listesi"><b>🧾Materials🧁✨</b>
+             <li>1tablespoons of starch </li>
+             <li> granulated sugar</li>
+             <li>1 packet maya</li>
+             <li>1 teaspoon of salt </li>
+             <li>4 cup flour</li>
+           </ul>
+          <img  id="resim1" src="donatt.jpeg" >
+
+                <div class="degerlendirme">
+                  <div class="yildizlar">
+                    <span class="yildiz" data-value="5">★</span>
+                    <span class="yildiz" data-value="4">★</span>
+                    <span class="yildiz" data-value="3">★</span>
+                    <span class="yildiz" data-value="2">★</span>
+                    <span class="yildiz" data-value="1">★</span>
+                  </div>
+                  <p class="puan-yazi">Rate this recipe!</p>
+               </div>
+            </div>
+
+        <div class="carousel-item"style="padding: 20px; text-align: center;">
+             <h2 style="color: rgb(169, 15, 245); font-size :24px;">🍫✨ SUFLE  DESSERT✨🍫</h2>
+             
+          <ul class="tarif-listesi"><b>🧾Materials🧁✨</b>
+             <li>2 egg yolk</li>
+             <li>1 teaspoon of salt</li>
+             <li>1 packet vanilla</li>
+             <li>7 dark chocolate</li>
+             <li>3 cup flour</li>
+             <li>teaspoon of salt</li>
+          </ul>
+          <img  id="resim1"  src="sufle.jpeg " >
+               
+              <div class="degerlendirme">
+                 <div class="yildizlar">
+                   <span class="yildiz" data-value="5">★</span>
+                   <span class="yildiz" data-value="4">★</span>
+                   <span class="yildiz" data-value="3">★</span>
+                   <span class="yildiz" data-value="2">★</span>
+                   <span class="yildiz" data-value="1">★</span>
+                 </div>
+                 <p class="puan-yazi">Rate this recipe!</p>
+              </div>
+          </div>
+    </div>
+
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js ">
+         </script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+        </script>
+
+<script>
+ $(document) .ready (function(){
+  $('.carousel').carousel( {
+   padding:200
+
+ }); /*kendi kendine dönsün*/ 
+  autoplay();
+  function autoplay(){
+     $('.carousel').carousel('next');
+      setTimeout(autoplay,4500);
+     }
+ });
+     /* yıldız doldurma çalışsın diye*/
+ $('.yildiz').click(function() {
+      const puan = $(this).data('value');
+      $(this).parent().next('.puan-yazi').text('Puanın için teşekkürler: ' + puan + '/5');
+      $(this).css('color', '#f1c40f').nextAll().css('color', '#f1c40f');
+ });
+</script>
+
+<div class="bilgi-konteyner">
+    <div class="bilgi-kutusu">
+        <h3>✨ Did You Know?✨</h3>
+        <p>The word "soufflé" comes from the French verb "souffler," meaning "to blow, to breathe into." A well-made soufflé can stay fresh for 5-10 minutes after serving!</p>
+        <hr style="border: 1px solid #a204f7; width: 50%;">
+        <p>The hole in the center of donuts was invented in 1847 by an American sailor to ensure the dough cooks evenly.</p>
+    </div>
+</div>
+
+  </body>
+</html>
+
+
+
