@@ -135,3 +135,19 @@ body {
 .sweet-form button:active {
     transform: scale(0.98); /* Hafifçe içeri çöksün, gerçek buton hissi versin */
 }
+
+/* Bu kodlar sadece ekran 768 pikselden küçükse çalışır */
+@media (max-width: 768px) {
+    body {
+        background-color: lightblue; /* Test etmek için rengi değiştir */
+    }
+    
+    .container {
+        width: 100%; /* Masaüstünde %80 ise mobilde %100 yap */
+        padding: 10px;
+    }
+
+    .menu {
+        display: none; /* Mobilde eski menüyü gizle */
+    }
+}
