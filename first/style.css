@@ -5,8 +5,8 @@ body {
 } 
  
 .hero-section { /*başlık yazısının ayarları ve animasyon ismi*/ 
- height:100px;
- margin: 20px; 
+ height:100%;
+ margin: 0 auto; 
  margin-top: 200px;
  font-size:45px; 
  letter-spacing: 3px; /*harf aralığı*/ 
@@ -151,3 +151,4 @@ body {
         display: none; /* Mobilde eski menüyü gizle */
     }
 }
+
