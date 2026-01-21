@@ -70,7 +70,7 @@ body {
 
 
 .carousel .carousel-item img {
-  max-width: 100% !important;
+  max-width: 100px !important;
   height: auto !important;
   object-fit: cover;
   border-radius: 15px;
@@ -147,4 +147,5 @@ body {
   color: #201c1c;
   margin: 5px 0 0 0;
 }
+
 
