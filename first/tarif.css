@@ -68,15 +68,15 @@ body {
   font-weight: bold;
 }
 
-
 .carousel .carousel-item img {
-  max-width: 100px !important;
-  height: auto !important;
+  width: 180px !important; /* Resim boyutunu buradan ayarlayabilirsin */
+  height: 180px !important; 
   object-fit: cover;
   border-radius: 15px;
   border: 3px solid #0f0c0c !important;
   margin: 0 !important;
-  flex-shrink: 0; /* Resmin yamulmasını engeller */
+  flex-shrink: 0; 
+  order: 2; /* Malzemelerin yanına/sonuna gelmesi için */
 }
 
 
@@ -147,5 +147,6 @@ body {
   color: #201c1c;
   margin: 5px 0 0 0;
 }
+
 
 
