@@ -14,35 +14,31 @@ body {
 
 
 .carousel .carousel-item {
-  background: white; 
-  width: 450px !important; /* Yan yana sığması için biraz genişlik şart */
-  height: 500px !important; /* kartların uzunluğu*/
-  margin: 25px 0;
-  animation: animate 2s infinite alternate;
-  border-radius: 20px;
-  border: 3px solid #a204f7;
-  padding: 30px; /* İçerik biraz daha rahatlasın */
-  display: flex !important;
-  flex-wrap: wrap; 
-  align-items: center; 
-  justify-content: center;
-  gap: 15px;
-  align-content:flex-start ;
+    background: white; 
+    width: 500px !important; /* Genişliği biraz artırdık ki malzemeler ve resim yan yana sığsın */
+    height: auto !important; /* Yüksekliği içeriğe göre esnek bıraktık */
+    min-height: 520px !important; 
+    padding: 20px; 
+    display: flex !important;
+    flex-wrap: wrap; 
+    align-items: flex-start; /* Elemanları yukarıdan başlatalım */
+    justify-content: space-between; /* Liste ve resmi iki uca itelim */
+    gap: 10px;
 }
-
 
 .carousel .carousel-item h2 {
-  width: 100% !important; /* Bak burası %100 olmalı, 100px değil! */
-  margin-top: 10px !important;
-  margin-bottom: 10px !important;
-  text-align: center;
+    width: 100% !important; 
+    margin-top: 0 !important;
+    margin-bottom: 20px !important;
+    text-align: center;
+    font-size: 22px !important;
 }
-
 .tarif-listesi {
-  padding: 0 !important;
-  width: 45% !important; /* Genişliği kıstık */
-  margin: 0 !important;
-  list-style: none !important;
+    padding: 0 !important;
+    width: 50% !important; /* Kartın yarısını listeye ayırdık */
+    margin: 0 !important;
+    list-style: none !important;
+    flex-shrink: 0; /* Küçülmesini engelledik */
 }
 
 .tarif-listesi li {
@@ -69,16 +65,16 @@ body {
 }
 
 .carousel .carousel-item img {
-  width: 180px !important; /* Resim boyutunu buradan ayarlayabilirsin */
-  height: 180px !important; 
-  object-fit: cover;
-  border-radius: 15px;
-  border: 3px solid #0f0c0c !important;
-  margin: 0 !important;
-  flex-shrink: 0; 
-  order: 2; /* Malzemelerin yanına/sonuna gelmesi için */
+    width: 180px !important; 
+    height: 180px !important; 
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #0f0c0c !important;
+    margin: 0 !important;
+    flex-shrink: 0; 
+    order: 2; /* Resmin sağda kalmasını garantiler */
+    align-self: flex-start; /* Listenin başıyla aynı hizada olsun */
 }
-
 
 @keyframes animate {
   from { box-shadow: 0 0 30px #0820d7, 0 0 60px #fd0505, 0 0 90px #8e05f1; }
@@ -119,17 +115,10 @@ body {
 }
 
 .degerlendirme {
-  margin-top: 15px;
-  text-align: center;
-  width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%; /* En alt satırı tamamen kaplasın */
 }
-
-.yildizlar {
-  display: flex;
-  flex-direction: row-reverse; /* Yıldızların soldan sağa doğru dolması için */
-  justify-content: center;
-}
-
 .yildiz {
   font-size: 30px;
   color: #ccc; /* Boş yıldız rengi */
@@ -147,6 +136,7 @@ body {
   color: #201c1c;
   margin: 5px 0 0 0;
 }
+
 
 
 
