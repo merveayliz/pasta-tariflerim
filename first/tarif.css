@@ -6,7 +6,7 @@ body {
 }
 
 .carousel {
-  height: 650px; /* Burayı küçültmek aşağıdaki boşluğu hemen daraltır */
+  height: 500px; /* Burayı küçültmek aşağıdaki boşluğu hemen daraltır */
   perspective: 250px;
   margin-top: 60px; /* Üstten olan boşluğu da biraz azalttık */
   overflow: visible !important;
@@ -101,6 +101,7 @@ body {
   color: #ccc;
   cursor: pointer;
 }
+
 
 
 
