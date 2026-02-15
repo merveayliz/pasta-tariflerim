@@ -1,4 +1,4 @@
-
+/* --- GENEL AYARLAR --- */
 body {
   margin: 0 auto;
   padding: 0;
@@ -12,63 +12,71 @@ body {
   overflow: visible !important;
 }
 
-
+/* --- KARTIN ANA YAPISI (BOZULAN YER BURASIYDI) --- */
 .carousel .carousel-item {
     background: white; 
-    width: 500px !important; /* Genişliği biraz artırdık ki malzemeler ve resim yan yana sığsın */
-    height: auto !important; /* Yüksekliği içeriğe göre esnek bıraktık */
-    min-height: 520px !important; 
-    padding: 20px; 
+    width: 500px !important; 
+    height: 520px !important; /* Kart boyutunu sabitledik */
+    padding: 25px; 
+    border-radius: 20px !important; /* YUVARLAK KÖŞELER GERİ GELDİ */
+    border: 3px solid #a204f7;
     display: flex !important;
-    flex-wrap: wrap; 
-    align-items: flex-start; /* Elemanları yukarıdan başlatalım */
-    justify-content: space-between; /* Liste ve resmi iki uca itelim */
-    gap: 10px;
+    flex-wrap: wrap; /* Elemanların sığmasını sağlar */
+    align-content: flex-start; 
+    justify-content: space-between;
+    animation: animate 2s infinite alternate;
+    overflow: hidden;
 }
 
+/* --- BAŞLIK: EN ÜSTTE VE ORTADA --- */
 .carousel .carousel-item h2 {
-    grid-column: 1 / 3; /* Başlık tüm genişliği kaplar */
+    width: 100% !important; 
     text-align: center;
-    margin-bottom: 10px !important;
+    margin: 0 0 15px 0 !important;
+    font-size: 22px !important;
+    color: rgb(37, 4, 223);
 }
 
+/* --- LİSTE: SOLDA --- */
 .tarif-listesi {
-    grid-column: 1; /* Birinci sütuna yerleş */
-    width: 100% !important;
+    width: 50% !important; /* Kartın sol yarısı */
+    padding: 0 !important;
     margin: 0 !important;
+    list-style: none !important;
 }
+
 .tarif-listesi li {
-  font-size: 16px;
+  font-size: 15px;
   position: relative;
-  transition: all 0.3s ease;
-  padding: 5px 0 5px 25px; /* Yıldız için yer */
+  padding: 5px 0 5px 25px;
   color: #444;
-  text-align: left;
 }
 
 .tarif-listesi li::before {
   content: "⭐";
   position: absolute;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
-.tarif-listesi li:hover {
-  transform: translateX(5px);
-  color: #a204f7;
-  font-weight: bold;
-}
+/* --- RESİM: TAM SAĞDA VE BAŞLIĞIN ALTINDA --- */
 .carousel .carousel-item img {
-    grid-column: 2; /* İkinci sütuna yerleş */
-    width: 180px !important;
-    height: 180px !important;
+    width: 170px !important; 
+    height: 170px !important; 
     object-fit: cover;
     border-radius: 15px;
-    border: 3px solid #0f0c0c !important;
-    align-self: start; /* Başlığın hemen altından başlasın */
+    border: 2px solid #0f0c0c !important;
+    margin-top: 0 !important; /* Başlığın hemen altına hizalar */
 }
 
+/* --- DEĞERLENDİRME: EN ALTTA --- */
+.degerlendirme {
+    width: 100% !important; 
+    text-align: center;
+    margin-top: auto; /* Kartın en altına iter */
+    padding-top: 10px;
+}
+
+/* --- DİĞER EFEKTLER (DOKUNMADIK) --- */
 @keyframes animate {
   from { box-shadow: 0 0 30px #0820d7, 0 0 60px #fd0505, 0 0 90px #8e05f1; }
   to { box-shadow: 0 0 50px 10px #0d18de, 0 0 80px 15px #ec3604, 0 0 110px 20px #bd07ea; }
@@ -77,60 +85,23 @@ body {
 .bilgi-konteyner {
     display: flex;
     justify-content: center;
-    margin-top: 92px; /* 3d kartlar ile bilgi kutusu arasındaki boşluğun mesafesi*/
-    padding-bottom: 50px; /* Sayfanın en altında boşluk kalsın */
+    margin-top: 92px;
 }
 
 .bilgi-kutusu { 
-    
     width: 70%;
-    background: rgba(255, 255, 255, 0.9); /* Hafif şeffaf beyaz */
-    border: 5px double #a204f7; /* Çift çizgili mor çerçeve */
+    background: rgba(255, 255, 255, 0.9);
+    border: 5px double #a204f7;
     border-radius: 20px;
     padding: 60px;
     text-align: center;
-    box-shadow: 0 0 20px rgba(162, 4, 247, 0.4);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.bilgi-kutusu h3 {
-    color: #a204f7;
-    margin-top: 0;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.bilgi-kutusu p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
-}
-
-.degerlendirme {
-    grid-column: 1 / 3;
-    text-align: center;
-}
 .yildiz {
   font-size: 30px;
-  color: #ccc; /* Boş yıldız rengi */
+  color: #ccc;
   cursor: pointer;
-  transition: color 0.2s;
 }
-
-.yildiz:hover,
-.yildiz:hover ~ .yildiz {
-  color: #f1c40f; /* Üzerine gelince sarı olsun */
-}
-
-.puan-yazi {
-  font-size: 14px;
-  color: #201c1c;
-  margin: 5px 0 0 0;
-}
-
-
-
 
 
 
