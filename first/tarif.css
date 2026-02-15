@@ -6,19 +6,18 @@ body {
 }
 
 .carousel {
-  height: 850px;
+  height: 650px; /* Burayı küçültmek aşağıdaki boşluğu hemen daraltır */
   perspective: 250px;
-  margin-top: 100px;
+  margin-top: 60px; /* Üstten olan boşluğu da biraz azalttık */
   overflow: visible !important;
 }
 
-/* --- KARTIN ANA YAPISI (BOZULAN YER BURASIYDI) --- */
 .carousel .carousel-item {
     background: white; 
     width: 500px !important; 
-    height: 520px !important; /* Kart boyutunu sabitledik */
+    height: 520px !important; /* Kart boyutunu sabitler */
     padding: 25px; 
-    border-radius: 20px !important; /* YUVARLAK KÖŞELER GERİ GELDİ */
+    border-radius: 20px !important; /* kartın yuvarlak köşeleri */
     border: 3px solid #a204f7;
     display: flex !important;
     flex-wrap: wrap; /* Elemanların sığmasını sağlar */
@@ -81,11 +80,11 @@ body {
   from { box-shadow: 0 0 30px #0820d7, 0 0 60px #fd0505, 0 0 90px #8e05f1; }
   to { box-shadow: 0 0 50px 10px #0d18de, 0 0 80px 15px #ec3604, 0 0 110px 20px #bd07ea; }
 }
-
 .bilgi-konteyner {
     display: flex;
     justify-content: center;
-    margin-top: 92px;
+    margin-top: 20px; /* 92px olan değeri 20px yaparak kartlara yaklaştırdık */
+    padding-bottom: 50px;
 }
 
 .bilgi-kutusu { 
@@ -102,6 +101,7 @@ body {
   color: #ccc;
   cursor: pointer;
 }
+
 
 
 
