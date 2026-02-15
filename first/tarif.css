@@ -63,17 +63,14 @@ body {
   color: #a204f7;
   font-weight: bold;
 }
-
 .carousel .carousel-item img {
-    width: 180px !important; 
-    height: 180px !important; 
+    grid-column: 2; /* İkinci sütuna yerleş */
+    width: 180px !important;
+    height: 180px !important;
     object-fit: cover;
     border-radius: 15px;
     border: 3px solid #0f0c0c !important;
-    margin: 0 !important;
-    flex-shrink: 0; 
-    order: 2; /* Resmin sağda kalmasını garantiler */
-    align-self: flex-start; /* Listenin başıyla aynı hizada olsun */
+    align-self: start; /* Başlığın hemen altından başlasın */
 }
 
 @keyframes animate {
@@ -136,6 +133,7 @@ body {
   color: #201c1c;
   margin: 5px 0 0 0;
 }
+
 
 
 
