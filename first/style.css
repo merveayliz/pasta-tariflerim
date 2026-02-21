@@ -1,25 +1,25 @@
 body {
  background:url(pembe.jpg) no-repeat fixed center/cover;
  display:flex;
- justify-content:center; /*içeriği hizala*/
+ justify-content:center; 
 } 
  
-.hero-section { /*başlık yazısının ayarları ve animasyon ismi*/ 
+.hero-section {
  height:100%;
  margin: 0 auto; 
  margin-top: 200px;
  font-size:45px; 
- letter-spacing: 3px; /*harf aralığı*/ 
+ letter-spacing: 3px; 
  color: #2b2b2b; 
- opacity: 0;                                /* sayfa açıldığında opaklık*/
- animation: slideDown 1.4s ease-out forwards; /* animasyon bitince son hali kalıcı oolur forwards*/
+ opacity: 0;                               
+ animation: slideDown 1.4s ease-out forwards; 
 }
  
 .hero { 
  margin: 0; 
  display: flex; 
- flex-direction: column; /* ALT ALTA */ 
- align-items: center; /* ortala */
+ flex-direction: column; 
+ align-items: center; 
 } 
 
 
@@ -35,7 +35,7 @@ body {
  color: #383636; 
  opacity:0; 
  animation: fadeIn 1.2s ease forwards; 
- animation-delay: 1s;   /* başlıktan sonra gelsin */ 
+ animation-delay: 1s;  
 }
 
 @keyframes fadeIn { 
@@ -55,9 +55,9 @@ body {
          } } 
 
 #link { 
- position: fixed; /* ekrana sabitler */ 
- bottom: 30px; /* aşağıdan mesafe */ 
- left: 30px; /* soldan mesafe */ 
+ position: fixed; 
+ bottom: 30px; 
+ left: 30px; 
  font-size: 16px; 
  text-decoration: none; 
  color: #2b2b2b; 
@@ -70,8 +70,8 @@ body {
 #link:hover { 
  background: #aa048e; 
  color: white; 
- transform: translateY(-9px); /* hafif yukarı */ 
- box-shadow: 0 5px 15px rgba(109, 11, 118, 0.4); /* Butonun altına da parlama gelsin */
+ transform: translateY(-9px); 
+ box-shadow: 0 5px 15px rgba(109, 11, 118, 0.4); 
 }
 
 
@@ -81,21 +81,21 @@ body {
  width: 100%; 
  max-width: 400px; 
  display: flex; 
- flex-direction: column;   /*formdaki elemanları alt alta dizer*/
- gap: 15px;                 /* form soruları arasında boşluk*/
+ flex-direction: column;   
+ gap: 15px;               
 } 
 
 .sweet-form input, 
 .sweet-form textarea { 
- padding: 12px;               /*formun sağa sola olan uzaklığı*/
+ padding: 12px;              
  border-radius: 12px;      
  border: 1px solid #ccc; 
  font-size: 14px;            
 } 
 
 .sweet-form button { 
- font-weight: bold; /* Yazıyı biraz kalınlaştıralım */
- transition: all 0.4s ease; /* Hareketin hızı 0.4 saniye olsun */
+ font-weight: bold; 
+ transition: all 0.4s ease; 
  padding: 14px; 
  border: none; 
  border-radius: 20px; 
@@ -105,50 +105,51 @@ body {
 } 
 
 .form-text { 
- margin-top: 35px;      /*başlık+alt metinden sonra boşlk*/
+ margin-top: 35px;    
  margin-bottom:10px;
  font-size: 15px; 
  color: #333; 
 }
 .sweet-form {
-  margin-top: 30px;                 /* başlık ile form arası boşluk */
-  padding: 25px;                    /* formun iç boşluğu */
+  margin-top: 30px;                
+  padding: 25px;                   
 
-  border: 1.5px solid #000;         /* ince siyah border */
-  border-radius: 20px;              /* yumuşak köşeler */
+  border: 1.5px solid #000;        
+  border-radius: 20px;             
 
-  background: rgba(255,255,255,0.9);/* hafif beyaz zemin */
+  background: rgba(255,255,255,0.9);
 
   box-shadow:
-    0 0 15px rgba(180, 0, 255, 0.4),   /* mor parlama*/
-    0 0 30px rgba(180, 0, 255, 0.25);    /* dış katmandaki parlamma daha şiddtli*/
+    0 0 15px rgba(180, 0, 255, 0.4),  
+    0 0 30px rgba(180, 0, 255, 0.25);    
 }
 
 
 .sweet-form button:hover {
-    background: #aa048e; /* Renk koyulaşsın */
-    transform: scale(1.05); /* Buton %5 büyüsün */
-    box-shadow: 0 5px 15px rgba(97, 8, 105, 0.4); /* Butonun altına da parlama gelsin */
+    background: #aa048e; 
+    transform: scale(1.05); 
+    box-shadow: 0 5px 15px rgba(97, 8, 105, 0.4); 
 }
 
-/* Butona basıldığında (Tıklama anı) */
+
 .sweet-form button:active {
-    transform: scale(0.98); /* Hafifçe içeri çöksün, gerçek buton hissi versin */
+    transform: scale(0.98); 
 }
 
-/* Bu kodlar sadece ekran 768 pikselden küçükse çalışır */
+
 @media (max-width: 768px) {
     body {
-        background-color: lightblue; /* Test etmek için rengi değiştir */
+        background-color: lightblue; 
     }
     
     .container {
-        width: 100%; /* Masaüstünde %80 ise mobilde %100 yap */
+        width: 100%;
         padding: 10px;
     }
 
     .menu {
-        display: none; /* Mobilde eski menüyü gizle */
+        display: none; 
     }
 }
+
 
