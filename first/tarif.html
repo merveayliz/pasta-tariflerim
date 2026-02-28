@@ -103,14 +103,14 @@
   $('.carousel').carousel( {
    padding:200
 
- }); /*kendi kendine dönsün*/ 
+ }); 
   autoplay();
   function autoplay(){
      $('.carousel').carousel('next');
       setTimeout(autoplay,4500);
      }
  });
-     /* yıldız doldurma çalışsın diye*/
+   
  $('.yildiz').click(function() {
       const puan = $(this).data('value');
       $(this).parent().next('.puan-yazi').text('Puanın için teşekkürler: ' + puan + '/5');
@@ -129,6 +129,7 @@
 
   </body>
 </html>
+
 
 
 
