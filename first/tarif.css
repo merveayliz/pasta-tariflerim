@@ -1,4 +1,3 @@
-/* --- GENEL AYARLAR --- */
 body {
   margin: 0 auto;
   padding: 0;
@@ -12,7 +11,6 @@ body {
   overflow: visible !important;
 }
 
-/* --- KART YAPISI --- */
 .carousel .carousel-item {
     background: white; 
     width: 500px !important; 
@@ -27,7 +25,6 @@ body {
     animation: animate 2s infinite alternate;
 }
 
-/* --- BAŞLIK --- */
 .carousel .carousel-item h2 {
     width: 100% !important; 
     text-align: center;
@@ -35,7 +32,6 @@ body {
     font-size: 22px !important;
 }
 
-/* --- LİSTE (HOVER ÖZELLİĞİ DÜZELTİLDİ) --- */
 .tarif-listesi {
     width: 50% !important; 
     padding: 0 !important;
@@ -60,14 +56,13 @@ body {
   transform: translateY(-50%);
 }
 
-/* İstediğin o Hover efekti */
+
 .tarif-listesi li:hover {
-  transform: translateX(10px); /* Sağa kayma miktarını biraz artırdım belli olsun diye */
+  transform: translateX(10px); 
   color: #a204f7;
   font-weight: bold;
 }
 
-/* --- RESİM (YİNE SAĞDA) --- */
 .carousel .carousel-item img {
     width: 170px !important; 
     height: 170px !important; 
@@ -76,7 +71,6 @@ body {
     border: 3px solid #0f0c0c !important;
 }
 
-/* --- DEĞERLENDİRME --- */
 .degerlendirme {
     width: 100% !important; 
     text-align: center;
@@ -84,7 +78,7 @@ body {
     padding-top: 10px;
 }
 
-/* --- BİLGİ KUTUSU (SENİN İLK SEVDİĞİN TARZ) --- */
+
 .bilgi-konteyner {
     display: flex;
     justify-content: center;
@@ -95,19 +89,27 @@ body {
 .bilgi-kutusu { 
     width: 70%;
     background: rgba(255, 255, 255, 0.9);
-    border: 5px double #a204f7; /* Çift çizgili mor çerçeve geri geldi */
+    border: 5px double #a204f7; 
     border-radius: 20px;
     padding: 40px;
     text-align: center;
     box-shadow: 0 0 20px rgba(162, 4, 247, 0.4);
 }
 
-/* --- DİĞERLERİ --- */
-.yildizlar { display: flex; flex-direction: row-reverse; justify-content: center; }
-.yildiz { font-size: 30px; color: #ccc; cursor: pointer; }
-.yildiz:hover, .yildiz:hover ~ .yildiz { color: #f1c40f; }
+.yildizlar { display: flex; 
+            flex-direction: row-reverse; 
+            justify-content: center; 
+           }
+.yildiz { font-size: 30px; 
+         color: #ccc; 
+         cursor: pointer; 
+        }
+.yildiz:hover, 
+.yildiz:hover ~ 
+.yildiz { color: #f1c40f; }
 
 @keyframes animate {
   from { box-shadow: 0 0 30px #0820d7, 0 0 60px #fd0505, 0 0 90px #8e05f1; }
   to { box-shadow: 0 0 50px 10px #0d18de, 0 0 80px 15px #ec3604, 0 0 110px 20px #bd07ea; }
 }
+
