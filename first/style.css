@@ -1,127 +1,114 @@
 body {
- background:url(pembe.jpg) no-repeat fixed center/cover;
- display:flex;
- justify-content:center; 
+   background:url(pembe.jpg) no-repeat fixed center/cover;
+   display:flex;
+   justify-content:center; 
 } 
  
 .hero-section {
- height:100%;
- margin: 0 auto; 
- margin-top: 200px;
- font-size:45px; 
- letter-spacing: 3px; 
- color: #2b2b2b; 
- opacity: 0;                               
- animation: slideDown 1.4s ease-out forwards; 
+   height:100%;
+   margin: 0 auto; 
+   margin-top: 200px;
+   font-size:45px; 
+   letter-spacing: 3px; 
+   color: #2b2b2b; 
+   opacity: 0;                               
+   animation: slideDown 1.4s ease-out forwards; 
 }
  
 .hero { 
- margin: 0; 
- display: flex; 
- flex-direction: column; 
- align-items: center; 
+  margin: 0; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
 } 
 
 
-.hero h1,
-.hero h3{ 
-    margin:0; 
+.hero h1,.hero h3{ 
+   margin:0; 
 } 
 
 #altmetin { 
- margin-top:3px ; 
- font-size:25px; 
- letter-spacing: 1px;
- color: #383636; 
- opacity:0; 
- animation: fadeIn 1.2s ease forwards; 
- animation-delay: 1s;  
+  margin-top:3px ; 
+  font-size:25px; 
+  letter-spacing: 1px;
+  color: #383636; 
+  opacity:0; 
+  animation: fadeIn 1.2s ease forwards; 
+  animation-delay: 1s;  
 }
 
 @keyframes fadeIn { 
-    from { opacity: 0; 
-    } 
-    to { opacity: 1;
-     } 
+    from { opacity: 0;} 
+    to { opacity: 1;} 
 } 
     
     
 @keyframes slideDown {
-     0% { transform: translateY(-80px); 
-          opacity: 0; 
-        }
-   100% { transform: translateY(0); 
-          opacity: 1; 
-         } } 
+     0% { transform: translateY(-80px); opacity: 0;}
+   100% { transform: translateY(0); opacity: 1; } 
+} 
 
 #link { 
- position: fixed; 
- bottom: 30px; 
- left: 30px; 
- font-size: 16px; 
- text-decoration: none; 
- color: #2b2b2b; 
- background: #ec4bfa; 
- padding: 12px 18px;
- border-radius: 30px; 
- transition: all 0.9s ease; 
+  position: fixed; 
+  bottom: 30px; 
+  left: 30px; 
+  font-size: 16px; 
+  text-decoration: none; 
+  color: #2b2b2b; 
+  background: #ec4bfa; 
+  padding: 12px 18px;
+  border-radius: 30px; 
+  transition: all 0.9s ease; 
 } 
 
 #link:hover { 
- background: #aa048e; 
- color: white; 
- transform: translateY(-9px); 
- box-shadow: 0 5px 15px rgba(109, 11, 118, 0.4); 
+  background: #aa048e; 
+  color: white; 
+  transform: translateY(-9px); 
+  box-shadow: 0 5px 15px rgba(109, 11, 118, 0.4); 
 }
 
-
-
-
 .sweet-form { 
- width: 100%; 
- max-width: 400px; 
- display: flex; 
- flex-direction: column;   
- gap: 15px;               
+  width: 100%; 
+  max-width: 400px; 
+  display: flex; 
+  flex-direction: column;   
+  gap: 15px;               
 } 
 
 .sweet-form input, 
 .sweet-form textarea { 
- padding: 12px;              
- border-radius: 12px;      
- border: 1px solid #ccc; 
- font-size: 14px;            
+  padding: 12px;              
+  border-radius: 12px;      
+  border: 1px solid #ccc; 
+  font-size: 14px;            
 } 
 
 .sweet-form button { 
- font-weight: bold; 
- transition: all 0.4s ease; 
- padding: 14px; 
- border: none; 
- border-radius: 20px; 
- background: #ec4bfa; 
- color: white; 
- cursor: pointer; 
+  font-weight: bold; 
+  transition: all 0.4s ease; 
+  padding: 14px; 
+  border: none; 
+  border-radius: 20px; 
+  background: #ec4bfa; 
+  color: white; 
+  cursor: pointer; 
 } 
 
 .form-text { 
- margin-top: 35px;    
- margin-bottom:10px;
- font-size: 15px; 
- color: #333; 
+  margin-top: 35px;    
+  margin-bottom:10px;
+  font-size: 15px; 
+  color: #333; 
 }
+
 .sweet-form {
   margin-top: 30px;                
   padding: 25px;                   
-
   border: 1.5px solid #000;        
   border-radius: 20px;             
-
   background: rgba(255,255,255,0.9);
-
-  box-shadow:
-    0 0 15px rgba(180, 0, 255, 0.4),  
-    0 0 30px rgba(180, 0, 255, 0.25);    
+  box-shadow: 0 0 15px rgba(180, 0, 255, 0.4),  0 0 30px rgba(180, 0, 255, 0.25);    
 }
 
 
@@ -136,20 +123,10 @@ body {
     transform: scale(0.98); 
 }
 
-
 @media (max-width: 768px) {
-    body {
-        background-color: lightblue; 
-    }
-    
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .menu {
-        display: none; 
-    }
+    body { background-color: lightblue; }
+    .container { width: 100%; padding: 10px;}
+    .menu { display: none; }
 }
 
 
