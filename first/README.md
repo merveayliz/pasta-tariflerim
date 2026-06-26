@@ -9,6 +9,7 @@ This project is a modern web application designed to showcase a pastry brand. It
 * **Interactive Rating System**: Built a star-rating component that provides instant visual feedback using jQuery.
 * **Responsive & Styled Forms**: A clean, user-friendly contact form with hover and active states for better user experience.
 
+
 ### 🛠 Technologies Used
 * HTML5 & CSS3 (Flexbox, Transforms, Keyframe Animations)
 * JavaScript & jQuery
