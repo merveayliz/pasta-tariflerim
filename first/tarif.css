@@ -100,10 +100,12 @@ body {
             flex-direction: row-reverse; 
             justify-content: center; 
            }
+
 .yildiz { font-size: 30px; 
          color: #ccc; 
          cursor: pointer; 
         }
+
 .yildiz:hover, 
 .yildiz:hover ~ 
 .yildiz { color: #f1c40f; }
