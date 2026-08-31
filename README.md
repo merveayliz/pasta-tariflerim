@@ -25,4 +25,3 @@ Bu projenin geliştirilme sürecinde aşağıdaki web teknolojileri kullanılmı
 
 ---
 
-## 📁 Proje Yapısı
