@@ -8,6 +8,7 @@ Modern, kullanıcı dostu ve tamamen mobil uyumlu (responsive) bir pasta tarifle
 
 ## 🚀 Özellikler
 
+
 - **Tam Responsive (Mobil Uyumlu) Tasarım:** Akıllı telefonlar, tabletler ve masaüstü cihazlar için optimize edilmiş kusursuz arayüz.
 - **Kullanıcı Dostu Navigasyon:** Kategoriler ve tarifler arasında rahat ve akıcı geçiş.
 - **Modern Tipografi ve Renk Paleti:** Tatlı ve pastacılık konseptine uygun, iştah kabartan ve göz yormayan renk tonları.
