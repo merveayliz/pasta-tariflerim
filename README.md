@@ -2,7 +2,6 @@
 
 Modern, kullanıcı dostu ve tamamen mobil uyumlu (responsive) bir pasta tarifleri web sitesi. Bu proje, lezzetli tarifleri şık bir görsel sunum ve temiz kod mimarisiyle bir araya getirmek amacıyla geliştirilmiştir.
 
-🌐 **Canlı Önizleme:** [pasta-tariflerim](https://merveayliz.github.io/pasta-tariflerim/)
 
 ---
 
